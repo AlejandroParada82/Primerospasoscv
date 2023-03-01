@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="Imagenes/cv.png">
+    <link rel="stylesheet" type="text/css" href="Estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+Hanunoo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+Hanunoo&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Maven+Pro:wght@900&family=Noto+Sans+Hanunoo&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Genos:ital,wght@1,800&family=Maven+Pro:wght@900&family=Noto+Sans+Hanunoo&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+ <header>
+    <a name ="formulario"></a>
+    <h1>Contacto</h1>
+    <nav>
+        <ul>
+            <li> <a href="index.html #cv">Volver a CV </a> </li>
+    
+        </ul>
+    </nav>
+
+ </header>
+
+<body>
+    <form action="" method="post">
+        <fieldset id="form">
+        <legend>Formulario</legend>
+        <ul>
+         <li>
+           <label for="nombre">Nombre:</label>
+           <input type="text" class="borde" id="nombre" name="user_name" required 
+           onfocus = "javascript:foco(nombre);" onblur = "javascript:desenfoco(nombre);"/>
+         </li>
+         <li>
+           <label for="mail">Correo electrónico:</label>
+           <input type="email" class="borde" id="mail" name="user_email"  required 
+           onfocus = "javascript:foco2(mail);" onblur = "javascript:desenfoco2(mail);"/>
+         </li>
+         <li>
+           <label for="msg">Mensaje:</label>
+           <textarea id="msg" name="user_mensaje" required></textarea>
+         </li>
+        </ul>
+         <input type="submit" name="submit" class="btn" value="Enviar" />
+        </fieldset>
+    </form>
+    <script src="function.js"></script>
+</body>
+
+
+</html>
